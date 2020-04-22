@@ -6,6 +6,9 @@
     box-sizing: border-box;
 }
 
+
+
+
 html{
     font-family: 'Roboto', sans-serif;
     font-size: 10px;
@@ -29,7 +32,7 @@ header{
 
 .nav{
     width: 100%;
-    height: 10rem;
+    height: 12rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -48,11 +51,20 @@ header{
     font-weight: bold;
 }
 
+.logoo {
+    background-image: url(billeder/desktop-logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+        width: 10%;
+    height: 100px;
+}
+
 .nav-list{
     list-style: none;
     display: flex;
-    margin-right: auto;
-    margin-left: 4rem;
+    
+    align-items: center;
 }
 
 .nav-link{
@@ -101,6 +113,15 @@ header{
     height: 6.6rem;
 }
 
+.scrolling-active .logoo {
+    background-image: url(billeder/Logo-hjerte.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+        max-width: 10%;
+    height: 60px;
+}
+
 .scrolling-active .nav a{
     color: #313131;
 }
@@ -125,7 +146,7 @@ header{
 .hero{
     width: 100%;
     height: 100vh;
-    background: url("billeder/mountain-large.jpg") center no-repeat;
+    background: url("billeder/gradient.png") center no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -137,12 +158,18 @@ header{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,.5);
+    
 }
 
 .demo-content{
     width: 100%;
     height: 200vh;
     background-color: #fff;
+}
+
+.titel {
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    color: white;
 }
 /* Hero end*/
