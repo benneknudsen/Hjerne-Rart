@@ -1,3 +1,6 @@
+
+
+
 *,
 *::before,
 *::after{
@@ -14,7 +17,7 @@ html{
     font-size: 10px;
 }
 
-header{
+.header{
     width: 100%;
     position: fixed;
     top: 0;
@@ -142,24 +145,7 @@ header{
 /*Apply styles after scroll end*/
 
 
-/* Hero Demo Content*/
-.hero{
-    width: 100%;
-    height: 100vh;
-    background: url("billeder/gradient.png") center no-repeat;
-    background-size: cover;
-    position: relative;
-}
 
-.hero::after{
-    content: '';
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    top: 0;
-    left: 0;
-    
-}
 
 .demo-content{
     width: 100%;
@@ -173,3 +159,290 @@ header{
     color: white;
 }
 /* Hero end*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,700'); /* import Montserrat font  */
+
+@keyframes topFadeOut {
+    0% {
+    
+      top: -20rem;
+      opacity: 0;
+    }
+  
+    75% {
+      
+      top: 0%;
+      opacity: 1;
+    }
+  
+    100% {
+        top: 0%;
+      opacity: 1;
+    }
+  }
+
+#home-container{
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr .5fr; /* for left and right sections */
+    grid-gap: 10px;
+    grid-template-areas: 
+            ". left right .";
+    height: 100%;   
+    z-index: 99;
+    transition: 1s;
+    position: relative;     
+    animation-name: topFadeOut;
+    animation-duration: 3s;
+}
+
+#inner{
+    grid-area: left;
+    align-self: center;
+    justify-self: center;
+    
+}
+
+#illustration{
+    grid-area: right;
+    align-self: center;
+    justify-self: center;
+    width: 80%;
+    padding: 30%;
+}
+
+img#logo{
+    width: 120px;
+    margin-bottom: 1.6em;
+}
+
+h1{
+    text-transform: uppercase;
+    color: #535353;
+    margin-bottom: .2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: white;
+}
+
+p.subtitle{
+    font-size: 1.4em;
+    color: #858585;
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
+.button{
+    display: inline-block;
+    background-color: #fff;
+    color: #313131;
+    font-size: 12px;
+    margin-top: 20px;
+    padding: 1.5rem 3rem;
+    border-radius: 3rem;
+    transition: background-color .5s ease;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: #d3d3d3;
+}
+
+
+
+#container {
+    width: 100%;
+    height: 100vh;
+    background: url("billeder/gradient.png") center no-repeat;
+    background-size: cover;
+    position: relative;
+    
+  }
+  .herotext {
+    color: #fff;
+    display: grid;
+    padding-top: 2%;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr; 
+    grid-gap: 10px;
+    grid-template-areas: 
+            ". left right .";
+    visibility: hidden;
+    opacity: 0;
+ position: absolute;
+
+
+  }
+  #container .herotext h2 {
+    font-size: 3em;
+  }
+  #container #first {
+    -webkit-animation: fade-first 24s linear infinite;
+            animation: fade-first 24s linear infinite;
+            height: 100vh;
+         
+            
+  }
+  #container #second {
+    -webkit-animation: fade-second 24s linear infinite;
+            animation: fade-second 24s linear infinite;
+            height: 100vh;
+            background: #4B79A1;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #283E51, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            
+  }
+  #container #third {
+    -webkit-animation: fade-third 24s linear infinite;
+            animation: fade-third 24s linear infinite;
+            background: #403A3E;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #BE5869, #403A3E);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #BE5869, #403A3E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            
+  height: 100vh;
+  }
+  
+  @-webkit-keyframes fade-first {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    3% {
+      opacity: 1;
+      visibility: visible;
+    }
+    30% {
+      opacity: 1;
+      visibility: visible;
+    }
+    33% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
+  @keyframes fade-first {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    3% {
+      opacity: 1;
+      visibility: visible;
+    }
+    30% {
+      opacity: 1;
+      visibility: visible;
+    }
+    33% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes fade-second {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    33% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    36% {
+      opacity: 1;
+      visibility: visible;
+    }
+    63% {
+      opacity: 1;
+      visibility: visible;
+    }
+    66% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  @keyframes fade-second {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    33% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    36% {
+      opacity: 1;
+      visibility: visible;
+    }
+    63% {
+      opacity: 1;
+      visibility: visible;
+    }
+    66% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes fade-third {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    66% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    69% {
+      opacity: 1;
+      visibility: visible;
+    }
+    96% {
+      opacity: 1;
+      visibility: visible;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  @keyframes fade-third {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    66% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    69% {
+      opacity: 1;
+      visibility: visible;
+    }
+    96% {
+      opacity: 1;
+      visibility: visible;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
