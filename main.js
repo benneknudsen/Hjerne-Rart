@@ -5,14 +5,19 @@ window.addEventListener('scroll', function () {
 })
 
 
-AOS.init();
+AOS.init(100);
 
-$('.slider').slick({
-    infinite: true,
-      dots: true,
-      arrows: false,
-      autoplay: true,
-      autoplaySpeed: 5000,
-      fade: true,
-      fadeSpeed: 1000
+
+
+  $(document).ready(function(){
+    $('.slider').slick({
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 8000, 
+        pauseOnHover: false,
+        dots: true,
+          arrows: false,
+          fade: true,
+          fadeSpeed: 2000
+    });
   });

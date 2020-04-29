@@ -1,5 +1,8 @@
 
-
+body[data-aos-duration='100'] [data-aos],
+[data-aos][data-aos][data-aos-duration='100'] {
+  transition-duration: 100ms;
+}
 
 *,
 *::before,
@@ -17,6 +20,16 @@ html{
     font-size: 10px;
     overflow-x: hidden;
 }
+
+
+@media (max-width:1170px) { 
+
+
+
+}
+
+
+@media only screen and (min-width: 1170px) { 
 
 .header{
     width: 100%;
@@ -161,26 +174,8 @@ html{
 }
 /* Hero end*/
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,700'); /* import Montserrat font  */
 
-@keyframes topFadeOut {
-    0% {
-    
-      top: -20rem;
-      opacity: 0;
-    }
-  
-    75% {
-      
-      top: 0%;
-      opacity: 1;
-    }
-  
-    100% {
-        top: 0%;
-      opacity: 1;
-    }
-  }
+
 
 #home-container{
     display: grid;
@@ -220,27 +215,29 @@ h1{
     text-transform: uppercase;
     color: #535353;
     margin-bottom: .2em;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: 700;
     font-size: 50px;
-    color: white;
+    
 }
 
 p.subtitle{
     font-size: 1.4em;
     color: #858585;
     margin-top: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: white;
+    
 }
 
 .button{
     display: inline-block;
-    background-color: #fff;
-    color: #313131;
-    font-size: 12px;
+    background-color: #778DFD;
+    color: white;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
     margin-top: 20px;
     padding: 1.5rem 3rem;
     border-radius: 3rem;
@@ -279,7 +276,7 @@ p.subtitle{
     font-size: 3em;
   }
   #container #first {
-    background: url("billeder/gradient.png") center no-repeat;
+    background: url("billeder/bg.png") center no-repeat;
     background-size: cover;
             height: 100vh;
          
@@ -304,7 +301,37 @@ p.subtitle{
   height: 100vh;
   }
   
-
+  @-webkit-keyframes pulse-grow-on-hover {
+    to {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+  @keyframes pulse-grow-on-hover {
+    to {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+  .pulse-grow-on-hover {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .pulse-grow-on-hover:hover, .pulse-grow-on-hover:focus, .pulse-grow-on-hover:active {
+    -webkit-animation-name: pulse-grow-on-hover;
+    animation-name: pulse-grow-on-hover;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+  }
   
   .slick-dots {
     display: -webkit-box;
@@ -354,4 +381,7 @@ p.subtitle{
   overflow: visible!important;
   position: relative!important;
   z-index: 99!important;
+}
+
+
 }
