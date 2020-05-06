@@ -528,7 +528,7 @@ display: flex;
 padding: 0 10%;
 justify-content: center;
 margin-bottom: 200px;
-margin-top: 150px;
+margin-top: 100px;
 }
 
 .undraw img {
@@ -601,50 +601,67 @@ margin-top: 150px;
     height: auto;
     align-self: center;
   }
+
+  ul {
+    list-style-type: none;
+}
   
   .undraw-house li {
     color: #555;
-    padding: 0 10%;
+    padding: 0 15%;
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
     font-size: 16px;
     margin-top: 20px;
   }
 
-.subscribe {
-  background-color: #ff3449;
+
+.subscribe-upper {
+  background: #CB356B;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.subscribe-mid {
+  display: flex;
+  padding: 0 20%;
+  background: #CB356B;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
-.subscribe img {
+.subscribe-mid img {
   max-width: 100%;
   height: auto;
   border-radius: 250px;
-  display: block;
-  margin: 0 auto;
+  
 }
 
-.subscribe h3 {
+
+        
+
+.subscribe-upper h3 {
   padding-top: 50px;
   color: #fff;
-  margin: 100px 0px;
   text-align: center;
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
   font-size: 26px;
   margin-top: 20px;
+  padding-bottom: 50px;
 }
 
-.subscribe p {
+.subscribe-mid p {
   color: #fff;
-  padding: 0 20%;
   letter-spacing: 1.5px;
   font-family: 'Rubik', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   margin-top: 20px;
   padding-bottom: 50px;
-  text-align: center;
+  text-align: left;
+  padding: 0 10%;
 }
 
 }
@@ -656,7 +673,29 @@ margin-top: 150px;
 /*
  SoMe Ikon i hjørnet
  */
+ .bluebag {
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+  opacity: 0; 
+  font-family: 'Shadows Into Light', cursive;
+  
+  
+  font-size: 24px;
+  transform: rotate(60deg);
+  animation: opacityOn 8s normal forwards step-end;
+  animation-delay: 0s;
+}
 
+
+@keyframes opacityOn {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
 
 .about {
   position: fixed;
@@ -712,7 +751,7 @@ margin-top: 150px;
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: transparent;
+  background-color: #fff;
   display: flex;
   transition: all 0.2s ease, background-color 0.4s ease;
   opacity: 1;
