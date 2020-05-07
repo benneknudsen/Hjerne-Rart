@@ -33,3 +33,10 @@ $(window).on("scroll resize", function(){
   $(".overlay").height(window_offset);
   $(".caption").css("bottom", (window_offset / 4) );
 });
+
+
+$(document).ready(function () {
+  $('#drawer-togglem').click(function () {
+    $('#nav-icon1m').toggleClass('open');
+  });
+});
