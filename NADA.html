@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 
 <body>
@@ -40,7 +41,7 @@
                 <ul class="nav-list">
 
                     <li>
-                        <a href="børnesamtaler.html" class="nav-link">Børnesamtaler</a>
+                        <a href="børnesamtaler.html" class="nav-link">Børn og unge samtaler</a>
                     </li>
                     <li>
                         <a href="sparring.html" class="nav-link">Sparring til forældre</a>
@@ -52,7 +53,7 @@
                         <a href="hvemerjeg.html" class="nav-link">Hvem er jeg?</a>
                     </li>
                 </ul>
-                <a href="kontakt.html" id="nav-cta">Kontakt</a>
+                <a href="mailto:hjerne-rart@hjerne-rart.dk" id="nav-cta">Kontakt</a>
             </nav>
         </div>
     </header>
@@ -69,11 +70,11 @@
         <nav id="drawerm">
             <ul>
 
-                <li><a href="børnesamtaler.html">Børnesamtaler</a></li>
+                <li><a href="børnesamtaler.html">Børn og unge samtaler</a></li>
                 <li><a href="sparring.html">Sparring til forældre</a></li>
                 <li><a href="NADA.html">NADA</a></li>
                 <li><a href="hvemerjeg.html">Hvem er jeg?</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
+                <a href="mailto:hjerne-rart@hjerne-rart.dk" id="nav-cta">Kontakt</a>
             </ul>
         </nav>
     </nav>
@@ -89,7 +90,16 @@
     </div>
 
 
-    <img class="center-img" src="billeder/children.png" alt="">
+    <div class="carousel" data-flickity='{ "wrapAround": true}'>
+        <img src="billeder/children.png" alt="" srcset="">
+        <img src="billeder/children.png" alt="" srcset="">
+        <img src="billeder/children.png" alt="" srcset="">
+        <img src="billeder/children.png" alt="" srcset="">
+        <img src="billeder/children.png" alt="" srcset="">
+      </div>
+      
+
+
 <h2 class="overskrifter-info">NADA i praksis – hvordan foregår det?</h2>
     <div class="information">
         <p>Du får 5 sterile engangsnåle i hvert øre, sat på bestemte punkter, mens du sidder eller ligger og slapper af.
@@ -213,6 +223,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
         integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous">
     </script>
+    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

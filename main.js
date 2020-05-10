@@ -40,3 +40,10 @@ $(document).ready(function () {
     $('#nav-icon1m').toggleClass('open');
   });
 });
+
+
+$('.carousel').flickity({
+  cellAlign:			'center',
+  contain:			true
+  
+});
