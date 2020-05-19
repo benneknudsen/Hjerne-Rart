@@ -408,8 +408,17 @@ h1{
   margin-bottom: .2em;
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 40px;
   
+}
+
+#inner h2 {
+  text-transform: uppercase;
+    color: #fff;
+    margin-bottom: .2em;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
 }
 
 /*
@@ -831,6 +840,11 @@ padding: 0 1%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  
+  }
+
+  iframe {
+    width: auto;
   }
 
 .quote {
@@ -1025,6 +1039,7 @@ border-color: #125688;
   padding-top: 120px;
   text-align: center;
   color: #FF3449;
+  padding: 5%;
 }
 
 .undertitler span{
@@ -1438,8 +1453,17 @@ h1{
     margin-bottom: .2em;
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 2.5vw;
     
+}
+
+#inner h2 {
+  text-transform: uppercase;
+    color: #fff;
+    margin-bottom: .2em;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 2.5vw;
 }
 
 /*
@@ -1539,6 +1563,7 @@ p.subtitle{
     border-radius: 3rem;
     transition: background-color .5s ease;
     text-decoration: none;
+    outline: none;
 }
 
 .button:hover{
@@ -1838,6 +1863,7 @@ margin-top: 100px;
 .facebook-reviews {
 display: flex;
 justify-content: space-evenly;
+height: 400px;
 }
 
 
@@ -1976,6 +2002,9 @@ textarea {
   resize: none;
 }
 
+iframe {
+  width: 470px;
+}
 
 .svg-inline--fa {
 vertical-align: -0.200em;
@@ -2571,7 +2600,7 @@ text-align: center;
 .wave-content {
   position:relative;
   margin-bottom: 50px;
-  height:25vh;
+
   text-align:center;
   
 }
