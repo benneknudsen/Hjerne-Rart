@@ -18,6 +18,7 @@ AOS.init(100);
         dots: true,
           arrows: false,
           fade: true,
+          imagesLoaded: true,
           fadeSpeed: 2000
     });
   });
