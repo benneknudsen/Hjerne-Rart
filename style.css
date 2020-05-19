@@ -436,7 +436,7 @@ Curvy Hero
 
 .fyld {
   width: 100%;
-  min-height: 120vh;
+  min-height: 105vh;
   background: #CB356B;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -448,19 +448,10 @@ Curvy Hero
 
 
 .intro .overlay {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  pointer-events: none;
+ display: none;
 }
 .intro .overlay svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+display: none;
 }
 
 .copy {
@@ -766,7 +757,7 @@ margin-top: 0px;
 }
 
 .undraw-house img {
-  margin-top: -30px;
+  
   max-width: 40%;
   height: auto;
   align-self: center;
@@ -1172,7 +1163,7 @@ padding-bottom: 50px;
 
 
 .christina {
-  max-width: 100%;
+  max-width: 40%;
   height: auto;
   border-radius: 250px;
   display: block;
@@ -2215,7 +2206,7 @@ padding-bottom: 50px;
 
 
 .christina {
-  max-width: 100%;
+  max-width: 15%;
   height: auto;
   border-radius: 250px;
   display: block;
@@ -2472,7 +2463,7 @@ text-align: center;
 
   .fyld {
     width: 100%;
-    min-height: 140vh;
+    min-height: 145vh;
     background: #CB356B;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
