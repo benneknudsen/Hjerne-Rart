@@ -547,6 +547,7 @@ position: absolute;
 }
 
 
+
 #container #first {
   background: url("billeder/gradient.png") center no-repeat;
   background-size: cover;
@@ -1088,13 +1089,13 @@ BØRNESAMTALER - Underside
 .hero-text h1{ 
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .hero-text p {
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .hero-exclusions {
@@ -1119,7 +1120,7 @@ BØRNESAMTALER - Underside
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
   font-size: 20px;
-  padding: 0 20%;
+  padding: 0 8%;
   color: #555;
   letter-spacing: 1px;
 padding-bottom: 100px;
@@ -1142,7 +1143,7 @@ padding-bottom: 100px;
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
   font-size: 20px;
-  padding: 0 20%;
+  padding: 0 8%;
   color: #555;
   letter-spacing: 1px;
 padding-top: 100px;
@@ -1152,7 +1153,7 @@ padding-top: 100px;
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
   font-size: 20px;
-  padding: 0 20%;
+  padding: 0 8%;
   color: #555;
   letter-spacing: 1px;
   text-align: center;
@@ -1183,7 +1184,7 @@ padding-bottom: 50px;
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
   font-size: 30px;
-  padding: 0 20%;
+  padding: 0 3%;
   color: #FF3449;
   letter-spacing: 1px;
   text-align: center;
